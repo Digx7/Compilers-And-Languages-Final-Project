@@ -655,10 +655,12 @@ void part4(string orginalFileName ,string readFileName, string writeFileName, st
 
     cout << orginalFileName << " has been compiled into " << writeFileName << endl;
     cout << "Attempting to compile " << writeFileName << " with the following command: ";
-    cout << "g++ " << writeFileName << endl;
+    //cout << "g++ " << writeFileName << endl;
 
-    string compileCommand = "g++ " + writeFileName;
+    string compileCommand = "g++ -o " + writeFileNameWithOutExtension + " " + writeFileName;
     string runCommand = ".\\" + writeFileNameWithOutExtension + ".exe";  
+
+    cout << compileCommand << endl;
 
     const char* compileStr = compileCommand.c_str();
     const char* runStr = runCommand.c_str();
