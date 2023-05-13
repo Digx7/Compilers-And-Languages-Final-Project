@@ -1,6 +1,6 @@
 program s2023 ;  
 var 
-p1 ,  p2q ,  pr  :  integer ;  
+p1 ,  p2q ,  pr1  :  integer ;  
 begin 
 p1  =  33 ;  
 p2q  =  412 ;  
@@ -8,4 +8,5 @@ pr  =  p1  +  p2q ;
 display  (  pr  )  ;  
 pr  =  p1 *  (  p2q  +  2 * pr )   ;  
 display  (  "value="  ,  pr  )   ;  
+display  (  pr  )  ;  
 end. 
